@@ -1,0 +1,96 @@
+.navbar-container {
+  background-color: #111;
+  color: white;
+  font-family: sans-serif;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  background-color: #f5a623;
+  color: #222;
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  user-select: none;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.company-name {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+  color: #999;
+  letter-spacing: 1px;
+}
+
+.navlinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.navlinks a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navlinks a:hover {
+  color: #f5a623;
+}
+
+/* Hamburger button - hidden on desktop */
+.hamburger-btn {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .hamburger-btn {
+    display: block;
+  }
+
+  .navlinks {
+    flex-basis: 100%;
+    flex-direction: column;
+    display: none;
+    margin-top: 0.5rem;
+  }
+
+  .navlinks.open {
+    display: flex;
+  }
+
+  .navlinks a {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #444;
+  }
+}
